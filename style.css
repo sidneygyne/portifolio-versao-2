@@ -1,10 +1,4 @@
-/*CSS Reset / Normalize*/
-/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
-coloque nas sessões indicadas*/
-
 :root{
-    /*Insira a variavel das outras cores inspecionando o modelo do figma*/
-    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
    --cor-de-fundo: #F5F5F5;
    --cor-de-fundo_II: #EAF2FD;
    --cor-de-link: #000;
@@ -65,6 +59,41 @@ p {
 .all{
     display: flex;
     flex-direction: column;
+}
+
+
+/* botoes */
+
+.experiencia__botao--repo{
+    height: 51px;
+    width: 165px;
+    font-size: 1rem;
+    color: var(--cor_botao_escuro);
+    border: 1px solid var(--cor_botao_escuro);
+}
+
+.experiencia__botao--demo,
+.formcontato__botao{
+    height: 51px;
+    width: 165px;
+    background-color: var(--cor_botao_escuro) ;
+    color: var(--cor_fonte_botao_fundo);
+    font-size: 1rem;
+    border: 0;
+}
+
+.experiencia__botao--repo:hover {
+    background-color: var(--cor_botao_claro_houver);
+}
+
+.experiencia__botao--demo:hover,
+.formcontato__botao:hover {
+    background-color: var(--cor_botao_escuro_houver);
+}
+
+.formcontato__botao{
+    height: 51px ;
+    width: 190px;
 }
 
 /*Sessão Menu*/
@@ -173,7 +202,7 @@ p {
     text-align: justify;
 }
 
-/*Sessão de Skills/Habilidade*/  /* Sessão de Hobbies*/ /*Sessão de Histórico Acadêmico*/
+/*Sessão de Skills/Habilidade/Hobbies/Histórico Acadêmico*/
 
 .hobbies__line,
 .skills__line{
@@ -182,14 +211,6 @@ p {
     gap: 10px;
 }
 
-.academic__courses. {
-    gap: 0;
-}
-
-.academic__courses__list {
-    padding: 0;
-    margin: 0;
-}
 .hobbies__box,
 .skills__box{
     background-color: var(--cor_fonte_botao_fundo) ;
@@ -204,10 +225,18 @@ p {
     padding: var(--padding);
 }
 
-
 .hobbies {
     padding: var(--padding);
     
+}
+
+.academic__courses. {
+    gap: 0;
+}
+
+.academic__courses__list {
+    padding: 0;
+    margin: 0;
 }
 
 .academic{
@@ -263,7 +292,6 @@ p {
 
 
 /*Contato*/
-
 
 .formcontato__contacto{
     display: flex;
@@ -348,49 +376,10 @@ ETIQUETA FLUTUANTE / EFEITO FLOAT LABEL ANIMADO
     font-size: 0.88rem;
     transform: translateY(0);
 }
-
 /* FORMULARIO CONTATO ----- FIM ----- */
 
 
-/* botoes */
-
-
-.experiencia__botao--repo{
-    height: 51px;
-    width: 165px;
-    font-size: 1rem;
-    color: var(--cor_botao_escuro);
-    border: 1px solid var(--cor_botao_escuro);
-}
-
-
-.experiencia__botao--demo,
-.formcontato__botao{
-    height: 51px;
-    width: 165px;
-    background-color: var(--cor_botao_escuro) ;
-    color: var(--cor_fonte_botao_fundo);
-    font-size: 1rem;
-    border: 0;
-}
-
-.experiencia__botao--repo:hover {
-    background-color: var(--cor_botao_claro_houver);
-}
-
-.experiencia__botao--demo:hover,
-.formcontato__botao:hover {
-    background-color: var(--cor_botao_escuro_houver);
-}
-
-.formcontato__botao{
-    height: 51px ;
-    width: 190px;
-}
-
-
 /*Sessão de Footer/Rodapé*/
-
 
 .footer__rodape{
     font-size: 16px;
@@ -398,14 +387,6 @@ ETIQUETA FLUTUANTE / EFEITO FLOAT LABEL ANIMADO
     text-align: center;
     line-height: 0;
 }
-
-/* Botao voltar ara topo */
-
-
-
-/* Chegou a hora de se desafiar com a responsividade, 
-utilize como referência os breakpoints @media abaixo*/
-
 
 /* /////////////////////// TABLET ///////////////////////*/
     @media (max-width: 1023px) {
@@ -451,7 +432,7 @@ utilize como referência os breakpoints @media abaixo*/
         flex-wrap: wrap;
     }
 
-    /*Sessão de Skills/Habilidade*/  /* Sessão de Hobbies*/ /*Sessão de Histórico Acadêmico*/
+    /*Sessão de Skills/Habilidade/Hobbies/Histórico Acadêmico*/
 
     .academic__courses,
     .hobbies__line,
@@ -492,6 +473,7 @@ utilize como referência os breakpoints @media abaixo*/
         width: 100%;
     }
 
+}
 
 /* /////////////////////// MOBLILE ///////////////////////*/
 
@@ -500,19 +482,15 @@ utilize como referência os breakpoints @media abaixo*/
     /* Botões */
 
     .experiencia__botao--repo{
-        height: 41  px;
+        height: 41px;
         width: 115px;
         font-size: 0.7rem;
-
-
     }
-    
     
     .experiencia__botao--demo,
     .formcontato__botao{
         height: 41px;
         width: 115px;
-
         font-size: 0.7rem;
 
     }
@@ -547,24 +525,16 @@ utilize como referência os breakpoints @media abaixo*/
 
     /*Sessão sobre*/
 
-    /*Sessão de Skills/Habilidade*/  /* Sessão de Hobbies*/ /*Sessão de Histórico Acadêmico*/
+    /*Sessão de Skills/Habilidade/Hobbies/Histórico Acadêmico*/
 
     .hobbies__box,
     .skills__box{
         width: 166px;
         height: 118px;
     }
-    /*Skills*/
-
-    /*Hobbies*/
-    
-    /*Formação Acadêmica*/
-
-    /*Experiência Profissional*/
 
     /*Sessão de Contato */
 
 
     /*Footer*/
-
-    }
+}
