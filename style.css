@@ -59,6 +59,7 @@ p {
 .all{
     display: flex;
     flex-direction: column;
+    
 }
 
 
@@ -134,6 +135,7 @@ p {
 
 .menu__list__item:hover {
     color: var(--cor_botao_escuro);
+    
 }
 
 .menu__list__item__contato{
@@ -157,11 +159,16 @@ p {
     align-items:center;
 }
 
+.title__profile:hover {
+    transform: scale(1.1);
+}
+
 .title__container{
     display: flex;
     flex-direction: column;
     padding: 1.5% 0.25% 0% 0%;
     width: 100%;
+    
 }
 
 .title__bio{
@@ -202,6 +209,7 @@ p {
     text-align: justify;
 }
 
+
 /*Sessão de Skills/Habilidade/Hobbies/Histórico Acadêmico*/
 
 .hobbies__line,
@@ -209,6 +217,15 @@ p {
     display: flex;
     justify-content: space-around;
     gap: 10px;
+    
+}
+
+
+.experience__img:hover {
+    transform: scale(0.9);
+    background-color: var(--azul-claro);
+    z-index: 2;
+    transition: 0.5s;
 }
 
 .hobbies__box,
@@ -219,6 +236,14 @@ p {
     display: flex;
     align-items: flex-end;
     flex-grow: 1;
+    
+}
+
+.hobbies__box:hover,
+.skills__box:hover {
+    transform: scale(1.1);
+    border:2px solid #2A7AE4;
+    
 }
 
 .skills {
@@ -293,6 +318,10 @@ p {
 
 /*Contato*/
 
+.formcontato{
+    display: none;
+}
+
 .formcontato__contacto{
     display: flex;
     justify-content: space-evenly;
@@ -305,8 +334,12 @@ p {
 .formcontato--esquerda{
     display: flex;
     align-items: center;
-
 }
+
+.formcontato__img:hover{
+    transform: scale(1.2);
+}
+
 .formcontato__text{
     display: flex;
     flex-direction: column;
@@ -318,7 +351,6 @@ p {
     flex-direction: column;
     padding-top: 13px;
 }
-
 
 .formcontato__textarea{
     border: none;
