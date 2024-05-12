@@ -312,6 +312,20 @@
             </div>
         </div>  
 
+        <div class="experiencie__box">
+            <div class="experience__secao_img">
+                <img class="experience__img" src="assets/github_perfil.png">
+            </div>
+            <div class="experience__info">
+                <h4 class="experience__title">Todos os projetos</h4>
+                <p class="experience__text">Github</p>
+                    <div class="experience__description">
+                            <span class="experience__repo"><a href="https://github.com/sidneygyne?tab=repositories" target="_blank"><button class="experiencia__botao--repo">Repositórios</button></a></span>
+                            <span class="experience__demo"><a href="https://github.com/sidneygyne" target="_blank"><button class="experiencia__botao--demo">Ir para página</button></a></span>
+                    </div>
+            </div>
+        </div>  
+
      </section>
      
 <!-- Sessão de Contato -->
@@ -325,28 +339,41 @@
                 <p class="formcontato__subtext">Quer entrar em contato comigo?<br>Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</p>
                 <form class="formcontato__form">
                     <div class="formcontato__input">
-                        <input class="formcontato__input2" type="text" id="nome" maxlength="50" required/>
+                        <input class="formcontato__input2" name="nome" type="text" id="nome" minlength="3" maxlength="50" required/>
                         <label>Nome</label>
+                        <span class="mensagem-erro"></span> 
                     </div>
                     <div class="formcontato__input">
-                        <input class="formcontato__input2" type="email" id="email"   required/>
+                        <input class="formcontato__input2" name="WhatsApp" type="tel" type="num" id="WhatsApp" minlength="10" maxlength="20" required/>
+                        <label>WhatsApp</label>
+                        <span class="mensagem-erro"></span> 
+                    </div>
+                    <div class="formcontato__input">
+                        <input class="formcontato__input2" name="email" type="email" id="email" minlength="8" required/>
                         <label>Email</label>
+                        <span class="mensagem-erro"></span> 
                     </div>
                     <div class="formcontato__input">
-                        <input class="formcontato__input2" type="text" id="assunto"  required/>
+                        <input class="formcontato__input2" name="assunto" type="text" id="assunto" minlength="4" maxlength="50" required/>
                         <label>Assunto</label>
+                        <span class="mensagem-erro"></span> 
                     </div>
                     <div class="formcontato__input">
-                        <textarea class="formcontato__textarea" id="mensagem" name="mensagem" type="text" required/></textarea>
+                        <textarea class="formcontato__textarea" id="mensagem" name="mensagem" type="text" minlength="10" maxlength="300" required/></textarea>
                         <label>Sua mensagem</label>
+                        <span class="mensagem-erro"></span> 
                          <!-- <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Sua mensagem"></textarea> -->   
                      </div> 
-                    <button type="submit" class="formcontato__botao" onclick="Enviar()">Enviar mensagem</button>
+                    <button type="submit" class="formcontato__botao">Enviar mensagem</button>
+                    
                 </form>
             </div>
         </div>
     </section>
 
+    <button class="back-to-top" type="button" style="display: none;">
+        <span class="back-to-top__texto">Topo</span>
+    </button>
 
 <!-- Sessão de Footer/Rodapé-->
         <section class="footer">

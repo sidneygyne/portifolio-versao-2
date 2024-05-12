@@ -1,8 +1,8 @@
 :root{
-   --cor-de-fundo: #F5F5F5;
-   --cor-de-fundo_II: #EAF2FD;
+   --cor-de-fundo: #dfe4f6;
+   --cor-de-fundo_II: #bcd4f5;
    --cor-de-link: #000;
-   --cor_botao_escuro: #2A7AE4;
+   --cor_botao_escuro: #1364cd;
    --cor_fonte_botao_fundo: white;
    --cor_botao_claro_houver: #D4E4FA;
    --cor_botao_escuro_houver:#5595E9;
@@ -217,7 +217,6 @@ p {
     display: flex;
     justify-content: space-around;
     gap: 10px;
-    
 }
 
 
@@ -236,8 +235,7 @@ p {
     display: flex;
     align-items: flex-end;
     flex-grow: 1;
-    
-}
+  }
 
 .hobbies__box:hover,
 .skills__box:hover {
@@ -319,7 +317,7 @@ p {
 /*Contato*/
 
 .formcontato{
-    display: none;
+   
 }
 
 .formcontato__contacto{
@@ -357,6 +355,11 @@ p {
     height: 100px;
 }
 
+.mensagem-erro{
+    font-size: 0.8rem;
+    color: red;
+}
+
 /*Contato CONTINUAÇÃO*/
 /* ----- INICIO -----
 ETIQUETA FLUTUANTE / EFEITO FLOAT LABEL ANIMADO
@@ -380,6 +383,7 @@ ETIQUETA FLUTUANTE / EFEITO FLOAT LABEL ANIMADO
     width: 100%;
 }
 
+
 .formcontato__input label {
     color: #9e9e9e;
     font-size: 1rem;
@@ -401,7 +405,7 @@ ETIQUETA FLUTUANTE / EFEITO FLOAT LABEL ANIMADO
 }
 
 .formcontato__input textarea:valid + label,
-.formcontato__input textarea:focus,
+.formcontato__input textarea:focus + label,
 .formcontato__input input:valid + label,
 .formcontato__input input:focus + label {
     color: var(--cor-de-link);
