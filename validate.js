@@ -7,6 +7,7 @@ formulario.addEventListener("submit", (e) => {
     const listaResostas = {
         "nome": e.target.elements["nome"].value,
         "email": e.target.elements["email"].value,
+        "WhatsApp": e.target.elements["WhatsApp"].value,
         "assunto": e.target.elements["assunto"].value,
         "mensagem": e.target.elements["mensagem"].value,
     }
