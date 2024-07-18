@@ -99,6 +99,24 @@ p {
     width: 190px;
 }
 
+#botaoVoltarTopo {
+    display: none;
+    position: fixed; /* Posição fixa na tela */
+    bottom: 20px; /* Distância do botão a partir do fundo da página */
+    right: 30px; /* Distância do botão a partir da margem direita */
+    z-index: 99; /* Garante que não sobreponha outros elementos */
+    background-color:  var(--cor_botao_escuro); 
+    color: var(--cor_fonte_botao_fundo);
+    cursor: pointer;
+    padding: 15px; 
+    border-radius: 10px; 
+    font-size: 18px; 
+  }
+  
+  #botaoVoltarTopo:hover {
+    background-color: var(--cor_botao_escuro_houver); 
+  }
+
 /*Sessão Menu*/
 
 .menu {
@@ -447,14 +465,24 @@ ETIQUETA FLUTUANTE / EFEITO FLOAT LABEL ANIMADO
 
 
 /*Sessão de Footer/Rodapé*/
-
-.footer__rodape{
+/* .footer{
     font-size: 16px;
     font-weight: 500;
     text-align: center;
     line-height: 0;
     padding: 10px;
-}
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+
+} */
+
+.footer_text{
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+} 
 
 /* /////////////////////// TABLET ///////////////////////*/
     @media (max-width: 1023px) {
@@ -559,6 +587,9 @@ ETIQUETA FLUTUANTE / EFEITO FLOAT LABEL ANIMADO
 /* /////////////////////// MOBLILE ///////////////////////*/
 
 @media (max-width: 767px) {
+    .all {
+        padding-bottom: 20px;
+    }
 
     /* Botões */
 
