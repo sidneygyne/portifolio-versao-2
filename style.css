@@ -274,6 +274,12 @@ p {
     
 }
 
+.experience_todos {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
 .experience__img:hover {
     transform: scale(0.9);
     background-color: var(--azul-claro);
@@ -297,7 +303,7 @@ p {
 }
 
 .experience__img{
-    max-width: 100%;
+    width: 50%;
     height: auto;
 }
 
@@ -306,6 +312,12 @@ p {
     flex-direction: column;
     flex-wrap: wrap;
     gap: 10px;
+    width: 50%;
+}
+
+.experience__title {
+    text-transform: uppercase;
+
 }
 
 .experience__title,
@@ -314,6 +326,11 @@ p {
 
 }
 
+.CartorioEbac,
+.Portifolio_Modelo2,
+.json-server {
+    display: none;
+}
 
 /*Contato*/
 
@@ -423,6 +440,7 @@ ETIQUETA FLUTUANTE / EFEITO FLOAT LABEL ANIMADO
     font-weight: 500;
     text-align: center;
     line-height: 0;
+    padding: 10px;
 }
 
 /* /////////////////////// TABLET ///////////////////////*/
