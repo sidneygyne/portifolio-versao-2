@@ -275,9 +275,10 @@ p {
 }
 
 .experience_todos {
-    gap: 30px;
+    gap: 40px;
     display: flex;
     flex-direction: column;
+    padding: 0;
 }
 
 .experience__img:hover {
@@ -513,6 +514,14 @@ ETIQUETA FLUTUANTE / EFEITO FLOAT LABEL ANIMADO
 
     .experiencie__box__2{
         flex-direction: row;
+    }
+
+    .experience__img{
+        width: 100%;
+    }
+    
+    .experience__info{
+        width: 100%;
     }
 
     /*Contato*/
