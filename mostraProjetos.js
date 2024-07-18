@@ -8,7 +8,10 @@ export default function constroiCard(name, description, html_url, homepage) {
     const produto = document.createElement("div");
     produto.className = `experiencie__box ${name}`;
     produto.innerHTML = ` 
-    <img class="experience__img" src="assets/imagem_projetos/${name}.png" alt="imagem do projeto ${name} ">
+    <div class="experience__img">
+    <span ><a href="${homepage}" target="_blank"><img class="experience__img__img" src="assets/imagem_projetos/${name}.png" alt="imagem do projeto ${name} "></img></a></span>
+    </div>
+   
     <div class="experience__info">
         <h4 class="experience__title">${name}</h4>
         <p class="experience__text">${description}</p>
