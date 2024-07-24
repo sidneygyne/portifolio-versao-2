@@ -1,0 +1,41 @@
+/* PROJETOS OCULTADOS */
+
+.CartorioEbac,
+.portifolio-versao-2,
+.json-server {
+    display: none;
+}
+
+/* ORDEM DOS PROJETOS */
+
+.aluraflix {
+    order: -99;
+}
+
+.portifolio {
+    order: -98;
+}
+
+.AluraGeek {
+    order: -97;
+}
+
+.decodificador-de-texto {
+    order: -96;
+}
+
+.Fokus {
+    order: -95;
+}
+
+.jogo-numero-secreto {
+    order: -94;
+}
+
+.space-app {
+    order: -93;
+}
+
+.cinetag{
+    order: -92;
+}
