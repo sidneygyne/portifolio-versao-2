@@ -9,6 +9,10 @@
 
 /* ORDEM DOS PROJETOS */
 
+.sidney-dev {
+    order: -100;
+}
+
 .aluraflix {
     order: -99;
 }
