@@ -66,7 +66,7 @@ p {
 }
 
 /* BOTOES */
-.experiencia__botao--repo {
+.projects__botao--repo {
     height: 51px;
     width: 165px;
     font-size: 1rem;
@@ -74,7 +74,7 @@ p {
     border: 1px solid var(--cor_botao_escuro);
 }
 
-.experiencia__botao--demo,
+.projects__botao--demo,
 .formcontato__botao {
     height: 51px;
     width: 165px;
@@ -84,12 +84,12 @@ p {
     border: 0;
 }
 
-.experiencia__botao--repo:hover {
+.projects__botao--repo:hover {
     background-color: var(--cor_botao_claro_houver);
     cursor: pointer;
 }
 
-.experiencia__botao--demo:hover,
+.projects__botao--demo:hover,
 .formcontato__botao:hover {
     background-color: var(--cor_botao_escuro_houver);
     cursor: pointer;
@@ -572,13 +572,13 @@ ETIQUETA FLUTUANTE / EFEITO FLOAT LABEL ANIMADO */
 
     /* Botões */
 
-    .experiencia__botao--repo {
+    .projects__botao--repo {
         height: 41px;
         width: 115px;
         font-size: 0.7rem;
     }
 
-    .experiencia__botao--demo,
+    .projects__botao--demo,
     .formcontato__botao {
         height: 41px;
         width: 115px;
@@ -622,7 +622,7 @@ ETIQUETA FLUTUANTE / EFEITO FLOAT LABEL ANIMADO */
         height: 118px;
     }
 
-    .experiencie__box {
+    .projects__box {
         gap: 5px;
     }
 }
@@ -631,4 +631,5 @@ ETIQUETA FLUTUANTE / EFEITO FLOAT LABEL ANIMADO */
     .menu__list {
         display: none;
     }
+
 }

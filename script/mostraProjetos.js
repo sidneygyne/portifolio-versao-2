@@ -17,8 +17,8 @@ export default function constroiCard(name, description, html_url, homepage) {
         <h4 class="projects__title">${name.replace(/-/g, ' ')}</h4>
         <p class="projects__text">${description}</p>
         <div class="projects__description">
-                <span class="projects__repo"><a href="${html_url}" target="_blank"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                <span class="projects__demo"><a href="${homepage}" target="_blank"><button class="experiencia__botao--demo">Ir para página</button></a></span>
+                <span class="projects__repo"><a href="${html_url}" target="_blank"><button class="projects__botao--repo">Repositório</button></a></span>
+                <span class="projects__demo"><a href="${homepage}" target="_blank"><button class="projects__botao--demo">Ir para página</button></a></span>
         </div>
     </li> `
     
