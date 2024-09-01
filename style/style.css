@@ -285,16 +285,17 @@ strong {
 
 .academic__courses,
 .experience_container {
-    gap: 0;
+    gap: 10px;
     display: flex;
     flex-direction: column;
 }
 
-.academic__courses__list,
-.experience_list {
-    padding: 0;
-    margin: 0;
+.experience_box,
+.academic__courses__box {
+    border-bottom: 4px solid var(--cor_botao_escuro);
+    box-shadow: 0 7px 29px 0 var(--cor_botao_escuro_houver);
 }
+
 
 /* experiência*/
 
@@ -323,7 +324,6 @@ strong {
     border-bottom: 4px solid var(--cor_botao_escuro);
     box-shadow: 0 7px 29px 0 var(--cor_botao_escuro_houver);
 }
-
 
 .projects__img {
     width: 50%;
@@ -625,6 +625,14 @@ ETIQUETA FLUTUANTE / EFEITO FLOAT LABEL ANIMADO */
     .projects__box {
         gap: 5px;
     }
+
+    .academic__courses__list,
+    .experience_list {
+     padding-left: 7px;
+     padding-right: 7px;
+    }
+    
+
 }
 
 @media (max-width: 300px) {
