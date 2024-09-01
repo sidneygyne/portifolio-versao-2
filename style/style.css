@@ -277,18 +277,21 @@ strong {
     border: 2px solid #2A7AE4;
 }
 
-.academic {
+.academic, 
+.experience {
     background-color: var(--cor-de-fundo_II);
     padding: var(--padding);
 }
 
-.academic__courses {
+.academic__courses,
+.experience_container {
     gap: 0;
     display: flex;
     flex-direction: column;
 }
 
-.academic__courses__list {
+.academic__courses__list,
+.experience_list {
     padding: 0;
     margin: 0;
 }
@@ -370,7 +373,7 @@ strong {
     justify-content: space-evenly;
     gap: 10px;
     padding: var(--padding);
-    background: var(--cor-de-fundo_II);
+    background: var(--cor-de-fundo_I);
 }
 
 .formcontato--esquerda {
@@ -457,6 +460,9 @@ ETIQUETA FLUTUANTE / EFEITO FLOAT LABEL ANIMADO */
 
 /* FORMULARIO CONTATO ----- FIM ----- */
 
+.footer {
+    background-color: var(--cor-de-fundo_II);
+}
 .footer_text {
     font-size: 16px;
     font-weight: 500;
@@ -524,7 +530,7 @@ ETIQUETA FLUTUANTE / EFEITO FLOAT LABEL ANIMADO */
         gap: 10px;
     }
 
-    .experiencie__box {
+    .projects__box {
         gap: 20px;
         flex-direction: column;
         border-bottom: 4px solid var(--cor_botao_escuro);
