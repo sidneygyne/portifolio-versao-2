@@ -295,14 +295,14 @@ strong {
 
 /* experiência*/
 
-.experience {
+.projects {
     padding: var(--padding);
     gap: 20px;
     display: flex;
     flex-direction: column;
 }
 
-.experience_todos {
+.projects_todos {
     gap: 40px;
     display: flex;
     flex-direction: column;
@@ -310,7 +310,7 @@ strong {
 }
 
 
-.experiencie__box {
+.projects__box {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -322,23 +322,23 @@ strong {
 }
 
 
-.experience__img {
+.projects__img {
     width: 50%;
     height: auto;
 }
 
-.experience__img__img {
+.projects__img__img {
     width: 100%;
 }
 
-.experience__img:hover {
+.projects__img:hover {
     transform: scale(0.9);
     background-color: var(--azul-claro);
     z-index: 2;
     transition: 0.5s;
 }
 
-.experience__info {
+.projects__info {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -347,17 +347,17 @@ strong {
     padding-right: 20px;
 }
 
-.experience__title {
+.projects__title {
     text-transform: uppercase;
 
 }
 
-.experience__title,
-.experience__text {
+.projects__title,
+.projects__text {
     margin: 0;
 }
 
-.experience__text {
+.projects__text {
     text-align: justify;
 }
 
@@ -520,7 +520,7 @@ ETIQUETA FLUTUANTE / EFEITO FLOAT LABEL ANIMADO */
         height: 118px;
     }
 
-    .experience {
+    .projects {
         gap: 10px;
     }
 
@@ -531,11 +531,11 @@ ETIQUETA FLUTUANTE / EFEITO FLOAT LABEL ANIMADO */
         box-shadow: 0 7px 29px 0 var(--cor_botao_escuro_houver);
     }
 
-    .experience__img {
+    .projects__img {
         width: 100%;
     }
 
-    .experience__info {
+    .projects__info {
         width: 97%;
         padding-top: 20px;
         padding-bottom: 20px;

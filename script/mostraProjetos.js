@@ -6,19 +6,19 @@ const lista = document.querySelector("[data-lista]");
 
 export default function constroiCard(name, description, html_url, homepage) {
     const produto = document.createElement("div");
-    produto.className = `experiencie__box ${name}`;
+    produto.className = `projects__box ${name}`;
     produto.innerHTML = ` 
-    <li class="experience__img">
+    <li class="projects__img">
         <span ><a href="${homepage}" target="_blank">
-        <img class="experience__img__img" src="assets/imagem_projetos/${name}.png" alt="imagem do projeto ${name} "></img>
+        <img class="projects__img__img" src="assets/imagem_projetos/${name}.png" alt="imagem do projeto ${name} "></img>
         </a></span>
     </li>
-    <li class="experience__info">
-        <h4 class="experience__title">${name.replace(/-/g, ' ')}</h4>
-        <p class="experience__text">${description}</p>
-        <div class="experience__description">
-                <span class="experience__repo"><a href="${html_url}" target="_blank"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                <span class="experience__demo"><a href="${homepage}" target="_blank"><button class="experiencia__botao--demo">Ir para página</button></a></span>
+    <li class="projects__info">
+        <h4 class="projects__title">${name.replace(/-/g, ' ')}</h4>
+        <p class="projects__text">${description}</p>
+        <div class="projects__description">
+                <span class="projects__repo"><a href="${html_url}" target="_blank"><button class="experiencia__botao--repo">Repositório</button></a></span>
+                <span class="projects__demo"><a href="${homepage}" target="_blank"><button class="experiencia__botao--demo">Ir para página</button></a></span>
         </div>
     </li> `
     
